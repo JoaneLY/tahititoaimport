@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="styles.css" type="text/css"> </head>
 
 <body>
-  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+  <nav class="navbar navbar-expand-md bg-primary navbar-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#" style="opacity: 0.5;">
-        <img width="30" height="30" class="d-inline-block align-top rounded" alt="" src="asset/logo.png">
+      <a class="navbar-brand" href="#">
+        <i class="fa d-inline fa-lg fa-cubes"></i>
+      </a>
+      <a class="navbar-brand" href="#">
         <b class="text-white">Tahiti Toa Import</b>
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,18 +22,22 @@
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
+            <a class="nav-link" href="#">Accueil </a>
           </li>
           <li class="nav-item text-light">
-            <a class="nav-link" href="#intro">Qui sommes-nous</a>
+            <a class="nav-link js-scrollTo" href="#intro">Qui sommes-nous</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link js-scrollTo" href="#cards">Une entreprise, un homme</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">une entreprise, un homme</a>
+            <a class="nav-link js-scrollTo" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scrollTo" href="#galerie">Galerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scrollTo" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -41,17 +47,22 @@
     <div class="container py-5">
       <div class="row">
         <div class="col-md-12 text-white">
-          <h1 class="display-3 mb-4 text-white">Nos conteneurs, votre maison.</h1>
-          <p class="lead mb-5 text-white">Tahiti toa import est LA solution pour construire votre maison-container</p>
+          <h1 class="display-3 mb-4 text-white">Nos containers, votre maison</h1>
+          <p class="lead mb-5 text-white bg-primary">Tahiti Toa Import est LA solution pour construire votre maison-container</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-5">
+  <div class="py-5" id="intro">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-center display-3 text-dark" id="intro">Qui sommes-nous ?</h1>
+          <h3 class="display-4 text-center text-white text-uppercase">QUI SOMMES-NOUS?</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead text-center text-primary">___________________________________</p>
         </div>
       </div>
       <div class="row">
@@ -62,8 +73,22 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="">Tahiti Toa import est une socièté locale proposant des services de construction basée essentiellement sur l'utilisation de containers. Nous fournissons et travailons les containers à des prix imbatables et répondons à tout types de besoins (studios,
+          <p class="text-center">Tahiti Toa import est une socièté locale proposant des services de construction basée essentiellement sur l'utilisation de containers. Nous fournissons et travailons les containers à des prix imbatables et répondons à tout types de besoins (studios,
             bureaux, maison,...)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 text-primary" id="cards">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="display-4 text-center text-white">UNE ENTREPRISE, UN HOMME </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead text-primary text-center">_______________________________________________</p>
         </div>
       </div>
     </div>
@@ -72,46 +97,50 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-7">
-          <h2 class="text-dark">UNE ENTREPRISE, UN HOMME </h2>
           <p class="">&nbsp;À la tête de la firme, un homme, Heimoana John Taurua... Pour lui, tout se doit d'être simple et efficace. Patron de différentes sociétés, Tahiti Toa Import est celle dont il voue le plus son énergie. Le travail des container </p>
         </div>
         <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="asset/contactpro.jpg"> </div>
+          <img class="img-fluid d-block w-100 img-thumbnail" src="asset/John.jpg"> </div>
       </div>
     </div>
   </div>
-  <div class="py-5 text-center bg-light">
+  <div class="py-5 text-center bg-light " id="services">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-center text-dark">Nos services</h2>
-          <p class="lead"></p>
+          <h3 class="display-4" id="services" contenteditable="true">NOS SERVICES</h3>
+          <p class="lead text-primary">_________________</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 p-4">
+        <div class="col-md-4 p-4 bg-primary">
+          <p class="lead">DES PRIX IMBATTABLES&nbsp;</p>
           <img class="img-fluid d-block rounded-circle mx-auto service-logo" src="asset/billets-francs-pacifique.jpg">
           <p class="my-4">Étant à la fois fournisseur et constructeur, Tahiti Toa Import a le monopole financier pour vous proposer ses services à des prix très attractifs ! &nbsp; </p>
-          <p>DES PRIX IMBATTABLES&nbsp;</p>
         </div>
-        <div class="col-md-4 p-4">
+        <div class="col-md-4 p-4 bg-primary">
+          <p class="lead">COMMANDEZ EN LIGNE&nbsp;</p>
           <img class="img-fluid d-block rounded-circle mx-auto service-logo" src="asset/pc humour.jpg">
           <p class="my-4">Vous avez la possibilité d'effectuer une demande de devis directement via notre site internet. &nbsp;</p>
-          <p>COMMANDEZ EN LIGNE&nbsp;</p>
         </div>
-        <div class="col-md-4 p-4">
+        <div class="col-md-4 p-4 bg-primary">
+          <p class="lead">LIVRAISON POSSIBLE SUR TAHITI &amp; SES ÎLES&nbsp;</p>
           <img class="img-fluid d-block rounded-circle mx-auto service-logo" src="asset/img.livraison.png">
           <p class="my-4">Tahiti Toa Import construit votre maison et &nbsp;rend possible la livraison de celle-çi ou que vous soyez.</p>
-          <p>LIVRAISON POSSIBLE SUR TAHITI &amp; SES ÎLES&nbsp;</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-5">
+  <div class="py-5" id="galerie">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="mb-4 text-dark text-center">Galeries</h1>
+          <h3 class="display-4 text-center" contenteditable="true">GALERIE</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead text-center text-primary">__________________</p>
         </div>
       </div>
     </div>
@@ -195,13 +224,28 @@
       </div>
     </div>
   </div>
+  <div class="py-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="display-4 text-center">CONTACTEZ-NOUS</h3>
+          <p class="lead text-primary text-center">_________________________________________</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="py-5 text-white opaque-overlay">
     <div class="container">
       <div class="row">
-        <div class="col-md-3"></div>
         <div class="col-md-6">
-          <h1 class="text-gray-dark text-dark text-center">CONTACTEZ-NOUS</h1>
-          <p class="lead mb-4 text-center">Complete all the fields below to send us a message</p>
+          <p class="lead text-center m-5">Papeete, Îles du Vent French Polynesia &nbsp;
+            <br>98713 BP 40559 FARE Tony &nbsp;
+            <br>+68989299264 Tahiti Toa Import&nbsp; tahititoaimport.987@gmail.com &nbsp;
+            <br>8h - 17h </p>
+        </div>
+        <div class="col-md-6">
+          <p class="lead mb-4 text-center">N'hésitez pas à poser vos questions!
+            <br> </p>
           <form class="" method="post" action="https://formspree.io/joanely7@outlook.fr">
             <div class="form-group">
               <label>Prénom</label>
@@ -216,9 +260,17 @@
               <label for="exampleInputEmail1">Message</label>
               <textarea class="form-control" id="exampleTextarea" name="message" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
           </form>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-fluid" src="asset/map.JPG"> </div>
       </div>
     </div>
   </div>
@@ -226,37 +278,42 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center align-self-center">
-          <p class="mb-5">Papeete, Îles du Vent, French Polynesia&nbsp;
-            <br>98713 BP 40559 FARE Tony&nbsp;
-            <br>+68989299264 - Tahiti Toa Import&nbsp;
-            <br>tahititoaimport.987@gmail.com&nbsp;
-            <br>Ouvert du lundi au vendredi de 8h - 17h</p>
           <div class="my-3 row">
-            <div class="col-4">
+            <div class="col-4 col-md-12">
               <a href="https://www.facebook.com" target="_blank">
                 <i class="fa fa-3x fa-facebook"></i>
-              </a>
-            </div>
-            <div class="col-4">
-              <a href="https://twitter.com" target="_blank">
-                <i class="fa fa-3x fa-twitter"></i>
-              </a>
-            </div>
-            <div class="col-4">
-              <a href="https://www.instagram.com" target="_blank">
-                <i class="fa fa-3x fa-instagram"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-md-6 p-0">
-          <img class="img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;&amp;markers=folsom+Ave+san+francisco&amp;center=folsom+Ave+san+francisco&amp;zoom=16&amp;size=640x300&amp;sensor=false&amp;scale=2"> </div>
+          <p class="lead">Droits d'auteur © 2018 Tous droits réservés - Tahiti Toa Import&nbsp; </p>
+        </div>
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Papeete, Îles du Vent French Polynesia&nbsp; 98713 BP 40559 FARE Tony&nbsp; +68989299264 - Tahiti Toa Import&nbsp; tahititoaimport.987@gmail.com&nbsp; 8h - 17h</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+    		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+    			var page = $(this).attr('href'); // Page cible
+    			var speed = 750; // Durée de l'animation (en ms)
+    			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+    			return false;
+    		});
+    	});
+  </script>
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
     <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
   </pingendo>
